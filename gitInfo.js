@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+const gitDefinition = "Git is a program that stores previous versions of a project, and protects old code from new mistakes.";
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+const gitHubDefinition = "Github is a website that stores remote repositories for sharing code and protecting old iterations.";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -26,6 +28,7 @@
 */
 
 //CODE HERE
+const gitInitDefinition = "git init starts a new repository, or set of versions for a folder.";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -34,6 +37,7 @@
 */
 
 //CODE HERE
+const gitCloneDefinition = "git clone copies a previously created repository in a new file location.";
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -42,6 +46,7 @@
 */
 
 //CODE HERE
+const gitStatusDefinition = "git status provides details of what is included in the repository";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -53,6 +58,8 @@
 */
 
 //CODE HERE
+const gitAddDefinition = "git add adds files to the repository to be saved. this includes adding new files as well as staging previously added files to commit.";
+const gitAddCode = "git add .";
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -64,7 +71,8 @@
 */
 
 //CODE HERE
-
+const gitCommitDefinition = "git commit saves a current version of each staged file to the repository";
+const gitCommitCode = "git commit -am 'initial commit'";
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +81,4 @@
 */
 
 //CODE HERE
+const gitPushDefinition = "git push sends the data of the local repository (the one on the computer) to a remote repository (like github).";
