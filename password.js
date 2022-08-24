@@ -2,12 +2,14 @@ let password = 'asdf1213';
 /*
     As requested, the minimum length is 10, and a letter and a number are both required.
     In addition, there is a maximum length of 20, and the space character is not allowed in the password.
+    The code also checks 
 */
 
 let passChars = password.split('');
 let num = false;
-let ltr = false;
-let spcs = false;
+let letter = false;
+let capLetter = false;
+let spaces = false;
 if (passChars.length < 10) {
     console.log("Password is not long enough.");
 }
@@ -19,8 +21,11 @@ else {
         if (!num && parseInt(passChars[i])) {
             num = true;
         }
-        else if (!ltr && passChars[i].toLowerCase() !== passChars[i].toUpperCase()) {
-            ltr = true;
+        else if (!letter && passChars[i].toLowerCase() !== passChars[i].toUpperCase() && passChars[i] === passChars[i].toLowerCase()) {
+            letter = true;
+        }
+        else if (!capLetter && passChars[i].toLowerCase() !== passChars[i].toUpperCase() && passChars[i] === passChars[i].toUpperCase()) {
+            capLetter = true;
         }
         else if (!spc && passChars[i] === " ") {
             spc = true;
